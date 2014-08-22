@@ -13,7 +13,7 @@ public class Account {
     }
 
     public int getMoney(int amount) {
-        if (balance < amount)
+        if (balance > amount)
             return 0;
 
         balance = balance - amount;
